@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "sunny_spell";
+  src: url("font/sunny-spells-basic-font/SunnySpellsBasicRegular-Yz1Wv.ttf");
+}
+
+*{
+  border: 1px solid red;
+}
+
+
+body { 
+  display: flex;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}
+
+#sign_up_form{
+  flex: 3;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+
+}
+
+.title > p{
+  font-family: sunny_spell;
+  font-size: 10vw;
+}
+
+#logo{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-content: center;
+}
+
+#logo > img {
+  max-width: 15vw;
+}
+#logo > a{
+  font-size: min(12px, 5vw);
+}
