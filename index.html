@@ -6,7 +6,7 @@
     <title>Sign-Up form</title>
     <link rel="stylesheet" href="style.css"> 
 </head>
-<body> 
+<body>  
 
     <div class="container" id="bg_img">
 
@@ -15,17 +15,16 @@
                 <img src="pictures/brown-cat-head-with-striking-blue-eyes.png">
             </div>
 
-            <p>cat'school</p>
+            <p>cat's</p>
         </div>
 
         <div class="credit">
-            Photo de  
+            Photo by 
             <a href="https://unsplash.com/fr/@bogdanf?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-            Bogdan Farca
-            </a> sur 
+            &nbsp; Bogdan Farca &nbsp; </a>
+            on 
             <a href="https://unsplash.com/fr/photos/chat-tigre-brun-sur-fenetre-en-bois-blanc-CEx86maLUSc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-             Unsplash
-            </a>
+            &nbsp; Unsplash </a>
         </div>
 
     </div>
@@ -44,7 +43,7 @@
         <form id="myform" action="" method="get">
             <p>Let's do this</p>
             <fieldset class="form">
-                <ul>
+                <ul id="ul1">
                     <li>
                         <label for="fname">FIRST NAME</label>
                         <input type="text" id="fname" name="user_fname" />
@@ -55,7 +54,7 @@
                     </li>
                     <li>
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="user_password" />
+                        <input type="password" id="password" name="user_password" required/>
                     </li>
                 </ul>
                 <ul>
@@ -69,7 +68,7 @@
                     </li>
                     <li>
                         <label for="passwordv">CONFIRM PASSWORD</label>
-                        <input type="password" id="passwordv" name="vpassword" />
+                        <input type="password" id="passwordv" name="vpassword" required/>
                     </li>
                 </ul>
             </fieldset>

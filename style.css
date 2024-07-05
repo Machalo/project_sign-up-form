@@ -3,14 +3,7 @@
   src: url("font/sunny-spells-basic-font/SunnySpellsBasicRegular-Yz1Wv.ttf");
 }
 
-/*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 *,::after,::before{box-sizing:border-box}html{font-family:system-ui,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';line-height:1.15;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4}body{margin:0}hr{height:0;color:inherit}abbr[title]{text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}::-moz-focus-inner{border-style:none;padding:0}:-moz-focusring{outline:1px dotted ButtonText}:-moz-ui-invalid{box-shadow:none}legend{padding:0}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}
-
-
-
-
-
-
 
 a{
   color: rgb(233, 236, 122);
@@ -24,20 +17,20 @@ body {
 
 
 #bg_img{
-  background-image: url("pictures/bogdan-farca-CEx86maLUSc-unsplash.jpg");
+  background-image: url("pictures/bogdan-farca-CEx86maLUSc-unsplash-midsize.jpg");
   flex: 1;
-  height: 800px;
+  height: 900px;
 }
 
 #sign_up_form{
-  flex: 2;
+  flex: 1;
 }
 
 .title{
   display: flex;
   align-content: center;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
   height: 150px;
   background-color: rgba( 0, 0, 0, 0.25);
 }
@@ -71,7 +64,7 @@ body {
   display: flex;
   align-content: center;
   justify-content: center;
-  margin-top: 525px;
+  margin-top: 625px;
   color: white;
 }
 
@@ -84,24 +77,21 @@ body {
 }
 
 .text{
-  padding-top: 40px;
-  padding-left: 20px;
-  padding-right: 40px;
+  padding: 40px 40px 20px 20px;
   font-size: 25px;
+  max-width: 775px;
 }
 
 form {
-  padding-left: 20px;
-  padding-top: 40px;
-  padding-right: 40px;
+  padding: 20px 40px 20px 20px;
   display: flex;
   flex-direction: column;
   background-color: rgb(208, 224, 240);
+  box-shadow: 0 2px 5px rgb(208, 224, 240);
 }
 
 form > p {
   font-size: 25px;
-  
 }
 
 fieldset {
@@ -109,6 +99,11 @@ fieldset {
   border-style: hidden;
   align-content: left;
   justify-content: left;
+  padding: unset;
+}
+
+#ul1 {
+  margin-right: 20px;
 }
 
 
@@ -117,7 +112,7 @@ ul {
   flex-direction: column;
   justify-self: left;
   align-self: left;
-  list-style: none;
+  padding-inline-start: unset;
 }
 
 
@@ -130,24 +125,29 @@ li {
 input{
   background-color: rgb(222, 245, 255);
   border-radius: 5px;
-  height: 20px;
+  height: 30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 18px;
+}
 
+input:invalid {
+  border-color: red;
+}
+
+input:focus {
+  box-shadow: 0 0 10px rgb(30, 138, 201);
 }
 
 .button{
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
-  padding-left: 20px;
-  padding-right: 40px;
+  padding: 80px 40px 20px 20px;
   
 }
 
 .button > input{
   width: 200px;
-  height: 30px;
+  height: 50px;
   border-radius: 5px;
   background-color: rgb(118, 218, 231);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
